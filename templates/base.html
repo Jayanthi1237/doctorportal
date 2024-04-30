@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="{% static 'output.css' %}">
     {% block extrastylesheet %}{% endblock %}
 </head>
-<body class="w-screen h-screen flex justify-center items-center"style='background-color: hsl(234, 29%, 20%);
-'>
+<body class="w-screen h-screen flex justify-center items-center" style='background-color: hsl(234, 29%, 20%); display: flex; justify-content: center; align-items: center;'>
     {% block content %}{% endblock %}
     {% block script %}{% endblock %}
 </body>

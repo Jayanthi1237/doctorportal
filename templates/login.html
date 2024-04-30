@@ -4,8 +4,8 @@
 
 {% block content %}
 
-<div class="p-4 bg-blue-200 overflow-auto rounded-md">
-    <form action="{% url 'login' %}" class="flex flex-col" method="post">
+<div class="p-4 bg-blue-200 overflow-auto rounded-md" style=" padding: 4%; overflow: auto;">
+    <form action="{% url 'login' %}" class="flex flex-col" method="post" style="display: flex; flex-direction: column;">
             {% csrf_token %}
             {{form}}
         <button type="submit">login</button>
