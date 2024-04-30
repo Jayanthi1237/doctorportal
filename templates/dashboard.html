@@ -5,17 +5,17 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-    <div class="flex flex-col bg-blue-400 p-4 rounded-md" style="padding: 4%; display: flex; flex-direction: column; padding: 4%;">
+    <div class="" style="padding: 4%; display: flex; flex-direction: column; padding: 4%;">
 
-        <div class="flex justify-between" style="display: flex; justify-content: space-between;">
+        <div class="" style="display: flex; justify-content: space-between;">
             {% if user.role == 1 %}
                 <p>DOCTOR</p>
             {% else %}
                 <p>USER</p>
             {% endif %}
-            <form action="{% url 'logout' %}" class="flex items-center mt-2" method="post" style="display: flex; align-items: center;">
+            <form action="{% url 'logout' %}" class="" method="post" style="display: flex; align-items: center;">
                 {% csrf_token %}
-                <input type="submit" class="p-1 w-full cursor-pointer" value="logout" style="cursor: pointer; padding: 2%;">
+                <input type="submit" class="" value="logout" style="cursor: pointer; padding: 2%;">
             </form>
         </div>
         
@@ -25,9 +25,9 @@
             {% if obj in fields %}
                 
                 {% if obj == 'profilePicture' %}
-                    <p class="text-white font-semibold text-lg">{{obj}}</p><img  src="/media/{{val}}" width="10%"  alt="profilePicture">
+                    <p class="" style="color: white;">{{obj}}</p><img  src="/media/{{val}}" width="10%"  alt="profilePicture">
                 {% else %}
-                    <p class="text-white font-semibold text-lg">{{obj}} : {{val}}</p>
+                    <p class="text-white font-semibold text-lg" style="color: white;">{{obj}} : {{val}}</p>
                 {% endif %}
 
             {% endif %}

@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'output.css' %}">
+    <link rel="stylesheet" href="{% static '' %}">
     {% block extrastylesheet %}{% endblock %}
 </head>
-<body class="w-screen h-screen flex justify-center items-center" style='background-color: hsl(234, 29%, 20%); display: flex; justify-content: center; align-items: center;'>
+<body class="w-screen h-screen" style='background-color: hsl(234, 29%, 20%); display: flex; justify-content: center; align-items: center;'>
     {% block content %}{% endblock %}
     {% block script %}{% endblock %}
 </body>
