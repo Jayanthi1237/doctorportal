@@ -20,13 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-SECRET_KEY = 'django-insecure-!jnq*k6(*kj8*-6@v@%$04k28&!tgvg+1qqgenzry=_!)14j!!'
-DEBUG = True
-ALLOWED_HOSTS = []
+# SECRET_KEY = 'django-insecure-!jnq*k6(*kj8*-6@v@%$04k28&!tgvg+1qqgenzry=_!)14j!!'
+# DEBUG = True
+# ALLOWED_HOSTS = []
 
-# SECRET_KEY = os.environ.get('SECRET_KEY')
-# DEBUG = os.environ.get('DEBUG','False').lower() == 'true'
-# ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(" ")
+SECRET_KEY = os.environ.get('SECRET_KEY')
+DEBUG = os.environ.get('DEBUG','False').lower() == 'true'
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(" ")
 
 AUTH_USER_MODEL = 'usercredentials.Profile'
 
