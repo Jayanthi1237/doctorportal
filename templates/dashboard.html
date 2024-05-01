@@ -13,7 +13,7 @@
             {% else %}
                 <p>USER</p>
             {% endif %}
-            <form action="{% url 'logout' %}" class="" method="post" style="display: flex; align-items: center;">
+            <form action="{% url 'logout' %}" class="" method="post" style="display: flex; align-items: center; border: 1px solid black; border-radius: 5px;">
                 {% csrf_token %}
                 <input type="submit" class="" value="logout" style="cursor: pointer; padding: 2%;">
             </form>
