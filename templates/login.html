@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<div class="" style=" padding: 4%; overflow: auto; border: 1px solid black; border-radius: 5px;">
+<div class="" style=" padding: 4%; overflow: auto; border: 1px solid black; border-radius: 5px; background-color: skyblue;">
     <form action="{% url 'login' %}" class="flex flex-col" method="post" style="display: flex; flex-direction: column;">
             {% csrf_token %}
             {{form}}
