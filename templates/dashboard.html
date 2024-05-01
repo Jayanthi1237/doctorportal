@@ -4,7 +4,7 @@
 {% block extrastylesheet %}
 <style>
     @media only screen and (min-width: 320px) and (max-width: 425px) {
-        .main{
+        .main-div{
             height: 30%;
             width: 17%;
         }
@@ -16,7 +16,7 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-    <div class="main" style="display: flex; flex-direction: column; padding: 2%; border: 1px solid black; border-radius: 5px; overflow-x: hidden;">
+    <div class="" style="display: flex; flex-direction: column; padding: 2%; border: 1px solid black; border-radius: 5px; overflow-x: hidden;">
 
         <div class="" style="display: flex; justify-content: space-between;">
             {% if user.role == 1 %}
@@ -48,7 +48,7 @@
     
     </div>
 {% else %}
-    <div class="" style="display: flex; flex-direction: column; padding: 2%; align-items: center; background-color: skyblue; width: 15%; height:15%; justify-content: space-between; border: 1px solid black; border-radius: 5px;">
+    <div class="main-div" style="display: flex; flex-direction: column; padding: 2%; align-items: center; background-color: skyblue; width: 15%; height:15%; justify-content: space-between; border: 1px solid black; border-radius: 5px;">
         <a href="{% url 'login' %}" class="text-white font-bold">LOGIN</a>
         <p>OR</p>
         <a href="{% url 'signupNav' %}" class="text-white font-bold">SIGNUP</a>
