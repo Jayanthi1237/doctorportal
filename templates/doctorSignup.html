@@ -7,10 +7,11 @@
 
 {% block content %}
 
-<div class="h-[70%] p-4 bg-blue-200 overflow-auto rounded-md " style="background-color:SandyBrown; height: 70%; padding: 4%; overflow: auto; border: 1px solid black; border-radius: 5px;">
+<div class=" " style="background-color:SandyBrown; height: 40%; padding: 4%; overflow: auto; border: 1px solid black; border-radius: 10px;">
     <form action="{% url 'doctorSignup' %}" class="grid grid-cols-2 gap-x-2" method="post" enctype="multipart/form-data" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-left: 0.5rem;">
             {% csrf_token %}
             {{form}}
+            <br>
         <button type="submit" style="border: 1px solid black; width: 20%; margin-left:90%  ; padding: 3%; background-color: whitesmoke;" >SIGNUP</button>
     </form>
 </div>
