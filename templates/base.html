@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static '' %}">
     {% block extrastylesheet %}{% endblock %}
 </head>
-<body class="w-screen h-screen" style='background-color: hsl(234, 29%, 20%); display: flex; justify-content: center; align-items: center;'>
+<body class="w-screen h-screen" style='background-color: hsl(234, 29%, 20%); display: flex; justify-content: center; align-items: center; height: 100vh; overflow-y: hidden;'>
     {% block content %}{% endblock %}
     {% block script %}{% endblock %}
 </body>
