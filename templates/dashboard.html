@@ -16,7 +16,7 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-    <div class="main" style="display: flex; flex-direction: column; padding: 2%; border: 1px solid black; border-radius: 5px; ">
+    <div class="main" style="display: flex; flex-direction: column; padding: 2%; border: 1px solid black; border-radius: 5px; overflow-x: hidden;">
 
         <div class="" style="display: flex; justify-content: space-between;">
             {% if user.role == 1 %}
