@@ -1,11 +1,22 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %} Dashboard {% endblock %}
+{% block extrastylesheet %}
+<style>
+    @media only screen and (min-width: 320px) and (max-width: 425px) {
+        .main{
+            height: 30%;
+            width: 17%;
+        }
+    }
+</style>
+
+{% endblock %}
 
 {% block content %}
 
 {% if user.is_authenticated %}
-    <div class="" style="display: flex; flex-direction: column; padding: 2%; border: 1px solid black; border-radius: 5px; ">
+    <div class="main" style="display: flex; flex-direction: column; padding: 2%; border: 1px solid black; border-radius: 5px; ">
 
         <div class="" style="display: flex; justify-content: space-between;">
             {% if user.role == 1 %}
